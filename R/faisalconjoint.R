@@ -21,17 +21,17 @@ mm=0
 k=0
 Factor=0
 
-for (i in 2:tc1){
-for (j in 1:max( dm [,i])){
+for (i in 2:tc1)	{
+for (j in 1:max( dm [,i]))	{	
 k=k+1
 mm [k] <- mean(dm[,tc] [dm [,i]== j ] )
-Factor [k] <- uth [i]
-}
-}
+Factor [k] <- uth [i]		
+					}		
+			}					
 Factor [k+1] <- "Constant"
 
 # calculation of Path Worth Utilities
-Utility=mm-mean(mm)
+Utility=mm-mean(mm)			
 Utility [k+1] <- mean(mm)
 hd1=data.frame(Factor,Level,Utility)
 
@@ -90,11 +90,6 @@ writeLines(" ")
 writeLines("** Faisal Conjoint Model: Factor Importance **")
 print(hd2)
 writeLines(" ")
-writeLines("Note: Graph FCMgraph.jpg is automatically save in current working directory.")
+writeLines("Note: Graph FCMgraph.jpg is automatically saved in current working directory.")
 
-# display result on screen only
-View (hd1, "Conjoint Parth Worth Utility")
-View (hd2, "Conjoint Factor Importance")
-
-# for result at R prompt write "faisalconjoint(candies_data,candies_levels)"
 }

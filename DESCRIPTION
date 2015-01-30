@@ -1,13 +1,13 @@
 Package: faisalconjoint
 Type: Package
 Title: Faisal Conjoint Model: A New Approach to Conjoint Analysis
-Version: 1.10
-Date: 2012-07-04
+Version: 1.15
+Date: 2015-01-30
 Author: Faisal Afzal Siddiqui, Ghulam Hussain, and Mudassir Uddin
 Maintainer: Faisal Afzal Siddiqui <brc.khi@gmail.com>
-Description: It is used for systematic analysis of decisions based on
-        attributes and its levels.
+Description: It is used for systematic analysis of decisions based on attributes and its levels.
 License: GPL-3
-Packaged: 2012-07-04 04:13:05 UTC; faisal
+NeedsCompilation: no
+Packaged: 2015-02-19 23:24:03 UTC; Faisal
 Repository: CRAN
-Date/Publication: 2012-07-04 06:10:54
+Date/Publication: 2015-02-20 06:45:59

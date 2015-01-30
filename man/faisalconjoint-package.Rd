@@ -12,57 +12,25 @@ Faisal Conjoint Model (FCM) is a conjoint model, developed by Faisal Afzal Siddi
 \tabular{ll}{
 Package: \tab faisalconjoint\cr
 Type: \tab Package\cr
-Version: \tab 1.10\cr
-Date: \tab 2012-06-03\cr
+Version: \tab 1.15\cr
+Date: \tab 2015-01-30\cr
 License: \tab GPL-3\cr
 }
-It has been tested with many published data (SPSS 19, SAS 9.3, Baheri et al.,  2011, Orme 2010, Hair  et al. 2009, Chan 2005, Green and Wind 1973, Green and Wind 1975, SAS Technical Report 1993, http://www.marketingengineering.com, www.sawtoothsoftware.com,) .  Most of time the results are same with same magnitudes, and some time the rank of results are in same order with different magnitudes.
+Conjoint Analysis is a technique that allows you to work out the hidden rules people use to make trade-offs between different products and services and the values they place on different features. By understanding precisely how people make decisions and what they value in your products and services, you can work out the optimum level of features and services that balance value to the customer against cost to the company.
 }
 \author{
 Faisal Afzal Siddiqui, Ghulam Hussain, Mudassir Uddin
 
 Maintainer: Faisal Afzal Siddiqui <brc.khi@gmail.com>
-
-}
-\references{
-SPSS 19
-SAS 9.3
-Baheri et al.,  2011
-Orme 2010
-Hair  et al. 2009
-Chan 2005
-Green and Wind 1973
-Green and Wind 1975
-SAS Technical Report 1993
-http://www.marketingengineering.com
-www.sawtoothsoftware.com
 }
 
-\keyword{ conjoint, conjoint model, conjoint analysis, faisal conjoint, faisal conjoint model }
+
+\keyword{conjoint, faisal comjoint model, rank, preferences, buying behavior, factor importance, part-worth utilities, package }
 
 \examples{
-# Example 1: SAS Teclmical Report R-109, Conjoint Analysis Examples
+# Example 1: Mobile Phone Set, Conjoint Analysis Examples
 library(faisalconjoint)
-data(candies_data)
-data(candies_levels)
-faisalconjoint(candies_data,candies_levels)
-
-# Example 2: Hair et al. 2009, Multivariate Data Analysis, 5/ed, Prenhall
-library(faisalconjoint)
-data(cleanser_data)
-data(cleanser_levels)
-faisalconjoint(cleanser_data,cleanser_levels)
-
-# Example 3: SPSS 19 Conjoint (2011)
-library(faisalconjoint)
-data(carpet_data)
-data(carpet_levels)
-faisalconjoint(carpet_data,carpet_levels)
-
-# Example 4: Orme, B. (2010) Getting Started with Conjoint Analysis
-library(faisalconjoint)
-data(traditional_data)
-data(traditional_levels)
-faisalconjoint(traditional_data,traditional_levels)
+data(mobile_data)
+data(mobile_levels)
+faisalconjoint(mobile_data,mobile_levels)
 }
-
